@@ -1,0 +1,104 @@
+.screen4{
+	color:$color2;
+	.wrapper{
+		padding:8% 0 0;
+		.main-icon{
+			font-size:50px;
+			border-color:$color2;
+		}
+		.whatneed{
+			margin-bottom:40px;
+			.whatneed-icon{
+				border-color:$color3;
+			}
+			.whatneed-text{
+				font-family:$primary-font-bold;
+				font-size:$font-m;
+			}
+		}
+		.principles{
+			margin:0 -20px 0;
+			padding:46px 20px 0;
+			position:relative;
+			&:before{
+				background:$color3;
+				content:'';
+				height:6px;
+				position:absolute;
+				top:20px;
+				left:30%;
+				right:30%;
+			}
+			.header{
+				font-family:$primary-font-bold;
+				font-size:$font-xl;
+			}
+			.principle{
+				font-family:$primary-font;
+				font-size:$font-l;
+				margin-bottom:25px;
+			}
+		}
+		.alert{
+			&:before{
+				background:$color4;
+				border-radius:20px;
+				color:$color1;
+				content:'\e81b';
+				font-family:'snow';
+				font-size:22px;
+				height:40px;
+				line-height:40px;
+				margin-left:-20px;
+				position:absolute;
+				left:50%;
+				top:-30px;
+				width:40px;
+
+			}
+			position:relative;
+			$color:$color4;
+			color:$color;
+			font-family:$primary-font-bold;
+			font-size:$font-l;
+			margin:35px auto;
+		    width: 260px;
+		    border: 3px solid $color;
+		    padding: 15px 10px;
+		    border-radius: 2px;
+		    text-transform:uppercase;
+		}
+	}
+}
+@media all and (min-width: $screen-sm-min) {//768
+	.screen4{
+		.wrapper{
+			padding-top:5%;
+		}
+	}
+}
+//PORTRAIT TABLETS
+@media all and (orientation:portrait) and (min-width: $screen-sm-min) {//768
+	.screen4{
+		$vertical-indents:9%;
+		.wrapper{
+			padding-top:$vertical-indents;
+		}
+		.header{
+			h2{
+				margin-bottom:$vertical-indents;
+			}
+		}
+	}
+}
+@media all and (min-width: $screen-lg-min) {//1200
+	.screen4{
+		.wrapper .alert{
+			border:0.25vw solid;
+			//display:inline;
+			width:100%;
+		    max-width:23vw;
+		    padding:1.2vw;
+		}
+	}
+}

@@ -1,0 +1,390 @@
+@charset "UTF-8";
+html, body {
+  font-size: 10px !important;
+  height: 100%;
+}
+
+#main-header {
+  color: #333;
+  min-height: 100%;
+  overflow: hidden;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#main-header .main-title {
+  padding: 9% 0;
+}
+
+#main-header .main-title h1 {
+  font-family: "GothamProBold", Arial;
+  font-size: 3.2em;
+  margin: 0 auto;
+}
+
+#main-header .wrapper {
+  position: relative;
+  margin-top: 8%;
+}
+
+#main-header .wrapper .header {
+  padding: 0 0 9%;
+}
+
+#main-header .wrapper .header h2 {
+  font-family: "GothamProBold", Arial !important;
+  font-size: 2.4em !important;
+  margin: 0 auto !important;
+}
+
+#main-header .wrapper .whatis {
+  margin-bottom: 9%;
+}
+
+#main-header .wrapper .whatis .whatis-text {
+  font-family: "GothamProBold", Arial;
+  font-size: 1.6em;
+}
+
+#main-header .wrapper .more-btn {
+  margin-top: 5px;
+}
+
+.icon {
+  border: 3px solid #333;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 32px;
+  line-height: 60px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+.header-lines {
+  display: inline-block;
+  padding: 0 35px;
+  position: relative;
+  width: auto;
+}
+
+.header-lines:before {
+  content: '';
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  background: #F0C311;
+  left: 0px;
+  top: 50%;
+}
+
+.header-lines:after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  background: #F0C311;
+  right: 0px;
+  top: 50%;
+}
+
+.more-btn {
+  color: #F0C311;
+  font-family: "GothamProBold", Arial;
+  font-size: 1.8em;
+  margin: 35px auto;
+  max-width: 260px;
+  border: 3px solid #F0C311;
+  padding: 15px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@font-face {
+  font-family: 'snow';
+  src: url("fonts/icons/snow.eot?33407149");
+  src: url("fonts/icons/snow.eot?33407149#iefix") format("embedded-opentype"), url("fonts/icons/snow.woff?33407149") format("woff"), url("fonts/icons/snow.ttf?33407149") format("truetype"), url("fonts/icons/snow.svg?33407149#snow") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  font-family: 'snow';
+}
+
+.icon-flash:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-paper-plane:before {
+  content: '\e801';
+}
+
+/* '' */
+.icon-snow-heavy:before {
+  content: '\e802';
+}
+
+/* '' */
+.icon-lightbulb:before {
+  content: '\e803';
+}
+
+/* '' */
+.icon-air:before {
+  content: '\e804';
+}
+
+/* '' */
+.icon-flash-1:before {
+  content: '\e805';
+}
+
+/* '' */
+.icon-emo-squint:before {
+  content: '\e806';
+}
+
+/* '' */
+.icon-emo-sunglasses:before {
+  content: '\e807';
+}
+
+/* '' */
+.icon-snow-heavy-inv:before {
+  content: '\e808';
+}
+
+/* '' */
+.icon-snow-alt:before {
+  content: '\e809';
+}
+
+/* '' */
+.icon-snow-inv:before {
+  content: '\e80a';
+}
+
+/* '' */
+.icon-moon:before {
+  content: '\e80b';
+}
+
+/* '' */
+.icon-moon-inv:before {
+  content: '\e80c';
+}
+
+/* '' */
+.icon-bed:before {
+  content: '\e80d';
+}
+
+/* '' */
+.icon-medkit:before {
+  content: '\e80e';
+}
+
+/* '' */
+.icon-ambulance:before {
+  content: '\e80f';
+}
+
+/* '' */
+.icon-money:before {
+  content: '\e810';
+}
+
+/* '' */
+.icon-dollar:before {
+  content: '\e811';
+}
+
+/* '' */
+.icon-money-1:before {
+  content: '\e812';
+}
+
+/* '' */
+.icon-dollar-1:before {
+  content: '\e813';
+}
+
+/* '' */
+.icon-cab:before {
+  content: '\e814';
+}
+
+/* '' */
+.icon-taxi:before {
+  content: '\e815';
+}
+
+/* '' */
+.icon-user:before {
+  content: '\e816';
+}
+
+/* '' */
+.icon-mobile:before {
+  content: '\e817';
+}
+
+/* '' */
+.icon-mail:before {
+  content: '\e818';
+}
+
+/* '' */
+.icon-location:before {
+  content: '\e819';
+}
+
+/* '' */
+.icon-down-open:before {
+  content: '\e81a';
+}
+
+/* '' */
+.icon-cancel:before {
+  content: '\e81b';
+}
+
+/* '' */
+.icon-cancel-circled2:before {
+  content: '\e81c';
+}
+
+/* '' */
+.icon-cancel-circled:before {
+  content: '\e81d';
+}
+
+/* '' */
+.icon-plus:before {
+  content: '\e81e';
+}
+
+/* '' */
+.icon-plus-squared:before {
+  content: '\e81f';
+}
+
+/* '' */
+.icon-plus-circled:before {
+  content: '\e820';
+}
+
+/* '' */
+.col-sm-4 {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-sm-4 {
+    float: left;
+    width: 33.3333333333%;
+  }
+}
+
+.row {
+  box-sizing: border-box;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+@media all and (min-width: 768px) {
+  #main-header .main-title {
+    padding-top: 4%;
+    padding-bottom: 7%;
+  }
+  #main-header .main-title h1 {
+    font-size: 4.8em;
+  }
+  #main-header .wrapper {
+    margin-top: 12%;
+  }
+  #main-header .wrapper .header {
+    padding-bottom: 4%;
+  }
+  #main-header .wrapper .header h2 {
+    font-size: 3.2em !important;
+  }
+}
+
+@media all and (orientation: portrait) and (min-width: 768px) {
+  #main-header .main-title {
+    padding: 12% 0;
+  }
+  #main-header .wrapper {
+    margin-top: 22%;
+  }
+  #main-header .wrapper .header {
+    padding: 0 0 12%;
+  }
+  #main-header .wrapper .whatis {
+    margin-bottom: 12%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  html, body {
+    font-size: 0.833vw !important;
+  }
+  #main-header .wrapper {
+    margin-top: 8%;
+  }
+  #main-header .wrapper .header h1 {
+    font-size: 3.2em;
+  }
+  #main-header .wrapper .whatis {
+    margin-bottom: 5%;
+  }
+  #main-header .wrapper .whatis .whatis-icon {
+    border: 0.25vw solid #333;
+    border-radius: 2.5vw;
+    display: inline-block;
+    font-size: 2.5vw;
+    line-height: 5vw;
+    margin-bottom: 10px;
+    height: 5vw;
+    width: 5vw;
+    text-align: center;
+  }
+  #main-header .main-title {
+    padding: 3% 0;
+  }
+  .more-btn {
+    border: 0.25vw solid #F0C311;
+    max-width: 23vw;
+    padding: 1.2vw;
+  }
+}
+
+#main-header .more-btn {
+  transition: all .2s;
+}
+
+#main-header .more-btn:hover {
+  color: #333;
+  background: #F0C311;
+  border-color: #333;
+}
+
+/*# sourceMappingURL=top.css.map */

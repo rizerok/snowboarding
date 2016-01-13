@@ -1,0 +1,244 @@
+#main-footer{
+	padding:40px $screen-padding 120px;
+	.request{
+		margin:0 auto 20px;
+		padding-left:$grid-gutter-width/2;
+		padding-right:$grid-gutter-width/2;
+		text-align:center;
+		width:100%*8/12;
+		max-width:$screen-sm-min;
+	}
+	.mail-form{
+		float:none;
+		margin:auto;
+		max-width:$screen-sm-min;
+		.input-block {
+			color:$color1;
+		    width: 100%;
+		    height: 40px;
+		    border-radius: 2px;
+		    background: #fff;
+		    position: relative;
+		    overflow: hidden;
+		    margin-bottom: 15px;
+		    .input-icon {
+		    	font-family:'snow';
+		    	font-size:20px;
+			    position: absolute;
+			    width: 35px;
+			    height: 100%;
+			    text-align: center;
+			    line-height: 40px;
+			    background: none;
+			}
+			.main-form-input {
+				font-family:$primary-font;
+				font-size:$font-m;
+			    width: 100%;
+			    height: 100%;
+			    border: none;
+			    padding:0 35px;
+			    text-align: center;
+			    background: none;
+			}
+			&.active{
+			    background:$color3;
+			    .input-icon, .main-form-input {
+					color:$color2;
+			    }
+			}
+			&.alert{
+			    background:$color12;
+			    .input-icon, .main-form-input {
+					color:$color2;
+			    }
+			}
+
+		}
+		.question{
+			font-family:$primary-font;
+			font-size:$font-m;
+			margin:0 0 15px;
+			text-align:left;
+		}
+		.main-form-comment{
+			border-radius:2px;
+			font-family:$primary-font;
+			font-size:$font-m;
+			height: 110px;
+			padding:10px;
+			resize:none;
+			width:100%;
+		}
+		.trainer-select{
+			.label-select{
+				font-family:$primary-font;
+				font-size:$font-m;
+				margin:15px 0 0;
+				text-align:left;
+			}
+			.select {
+			    //width: 60%;
+			    cursor:pointer;
+			    position:relative;
+			    .select-view{
+			    	border-radius: 3px;
+			    	border: 2px solid rgba(0,0,0,.2);
+			    	line-height:40px;
+			    	height:40px;
+			    	
+			    	text-align:left;
+			    	span{
+				    	font-family:$primary-font-bold;
+				    	font-size:$font-m;
+				    	padding-left:20px;
+			    	}
+			    	.select-drop{
+			    		float:right;
+			    		font-family:'snow';
+			    		height:100%;
+			    		background:rgba(0,0,0,.4);
+			    		text-align:center;
+			    		width:40px;
+			    	}
+			    }
+			    ul{
+			    	background:rgba(0,0,0,.6);
+			    	//border:2px solid rgba(0,0,0,.2);
+			    	//border-top:0;
+			    	//border-radius:3px;
+			    	list-style:none;
+			    	padding-left:0px;
+			    	position:absolute;
+					left:2px;
+					right:2px;
+			    	text-align:left;
+			    	z-index:2;
+			    	li{
+			    		color:$color2;
+			    		font-family:$primary-font-bold;
+				    	font-size:$font-m;
+			    		line-height:40px;
+			    		padding-left:20px;
+			    	}
+			    }
+			}
+			.select.sel-hidden ul{
+				//visibility:hidden;
+			}
+		}
+		.submit{
+			$button-color:$color3;
+			background:$button-color;
+			color:$color2;
+			font-family:$primary-font-bold;
+			font-size:$font-l;
+			margin:35px auto;
+		    width: 100%;
+		    border: 3px solid $button-color;
+		    padding: 15px 10px;
+		    border-radius: 2px;
+		    cursor: pointer;
+		    text-transform:uppercase;
+		}
+	}
+}
+#colorbox.response-box{
+	#cboxContent{
+		background:none;
+		#cboxClose{
+			background:none;
+			display:none;
+		}
+	}
+	#cboxLoadedContent{
+		background:none;
+		border:0;
+	}
+	.message{
+		color:$color2;
+		height:100%;
+		text-align:center;
+		padding:40px 20px 0;
+		.x32{
+			font-family:$primary-font;
+			font-size:$font-xxl;
+			margin-bottom:40px;
+		}
+		.x16{
+			font-family:$primary-font-bold;
+			font-size:$font-m;
+			margin-bottom:40px;
+		}
+		.more-btn{
+			color:$color2;
+			border-color:$color2;
+		}
+	}
+}
+@media all and (max-width: $screen-xs-max) {//phones
+	#main-footer{
+		padding-bottom:40px;
+	}
+}
+@media all and (min-width: $screen-sm-min) {//768
+	#main-footer{
+		padding-top:7%;
+	}
+
+}
+//PORTRAIT TABLETS
+@media all and (orientation:portrait) and (min-width: $screen-sm-min) {//768
+	#main-footer{
+		padding-top:20%;
+		$vertical-indents:5%;
+		.header{
+			margin-bottom:$vertical-indents;
+		}
+		.request{
+			margin-bottom:$vertical-indents;
+		}
+		form{
+			.row{
+				margin-bottom:$vertical-indents;
+			}
+		}
+	}
+}
+//animations
+#main-footer {
+	.mail-form{
+		.submit{
+			transition:all .2s;
+		}
+		.submit:hover{
+			color:$color1;
+		}
+	}
+}
+.input-block{
+	transition:background .2s;
+	    .input-icon, .main-form-input {
+			transition:color .2s;
+	    }
+}
+.select{
+	ul{
+		transition:all .2s;
+		transform-origin:top;
+		li:hover{
+			background:rgba(255,255,255,.1)
+		}
+	}
+	&.sel-hidden ul{
+		transform:scale(1,0);
+	}
+	.select-drop{
+		transition:all .2s;
+	}
+	&:hover{
+		.select-drop{
+			background:rgba(0,0,0,.5) !important;
+		}
+	}
+}

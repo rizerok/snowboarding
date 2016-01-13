@@ -1,0 +1,80 @@
+.screen2{
+	color:$color2;
+	.wrapper{
+		margin-top:9%;
+		.main-icon{
+			font-size:50px;
+			border-color:$color2;
+		}
+		.header .heading{
+			font-family:$primary-font-bold;
+			font-size:$font-xl;
+			margin:25px auto;
+		}
+		.text{
+			font-family:$primary-font;
+			font-size:$font-m;
+			margin-bottom:30px;
+		}
+		.steps{
+			margin-bottom:30px;
+			.steps-icon{
+				border-color:$color2;
+				font-family:$primary-font;
+				font-size:53px;
+				overflow:hidden;
+				margin-bottom:0px;
+				padding-top:12px;
+			}
+			.steps-text{
+				p{
+					font-family:$primary-font;
+					font-size:$font-m;
+					margin:0;
+				}
+				span{
+					color:$color4;
+					font-family:$primary-font-bold;
+					font-size:$font-xl;
+				}
+			}
+		}
+	}
+}
+@media all and (orientation:portrait) and (min-width: $screen-sm-min) {//768
+	.screen2{
+		$vertical-indents:12%;
+		.wrapper{
+			.header{
+				margin-bottom:30px;
+			}
+			.text{
+				margin-bottom:$vertical-indents;
+			}
+			.steps{
+				margin-bottom:$vertical-indents;
+			}
+			.sub-text{
+				margin-bottom:$vertical-indents;
+			}
+		}
+	}
+}
+@media all and (min-width: $screen-lg) {
+	.screen2{
+		.wrapper{
+			margin-top:6%;
+		}
+	}
+}
+//animaton
+.screen2{
+	.more-btn{
+		transition:all .2s;
+	}
+	.more-btn:hover{
+		color:$color1;
+		background:$color4;
+		border-color:$color1;
+	}
+}

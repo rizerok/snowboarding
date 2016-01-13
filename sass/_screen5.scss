@@ -1,0 +1,116 @@
+.screen5{
+	background:$color11;
+	padding:20px 0 20px;
+	h2{
+		color:$color2;
+	}
+	.trainers{
+		margin:auto;
+		max-width:$screen-md;
+		padding:0 $screen-padding;
+	}
+	.trainer-wrap{
+		background:$color7;
+		border-radius:5px;
+		//border:2px solid darken($color4,5%);
+		margin-bottom:30px;
+		overflow:hidden;
+		.trainer-header{
+			background:$color6;
+			padding:20px 0;
+			.trainer-photo{
+				border-radius:100px;
+				border:3px solid $color5;
+				height:190px;
+				margin:auto;
+				overflow:hidden;
+				width:190px;
+			}
+			.trainer-name{
+				font-size:$font-xl;
+				font-family:$primary-font-bold;
+				color:$color1;
+				padding:20px 0;
+			}
+		}
+		.trainer-content{
+			padding:20px 0;
+			.trainer-heading{
+				color:$color3;
+				font-family:$primary-font-bold;
+				font-size:$font-l;
+				padding:0 0 10px;
+				text-transform:uppercase;
+			}
+			.price-table{
+				padding:0 30px;
+				.table-row{
+					border-top:1px solid $color5;
+					//line-height:38px;
+					padding:10px 0;
+					overflow:hidden;
+					&:first-child{
+						border-top:0;
+					}
+					.hours{
+						float:left;
+						font-family:$primary-font;
+						.x18{
+							font-size:$font-l;
+						}
+						.x16{
+							
+							font-size:$font-m;
+						}
+					}
+					.price{
+						float:right;
+						font-family:$primary-font;
+						font-size:$font-l;
+					}
+				}
+			}
+		}
+		.trainer-footer{
+			padding:0 30px;
+			.order-btn{
+				background:$color4;
+				color:$color2;
+				font-family:$primary-font-bold;
+				font-size:$font-m;
+				margin:20px auto;
+			    width: 100%;
+			    max-width:260px;
+			    padding: 15px 10px;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    text-transform:uppercase;
+			}
+		}
+	}
+}
+@media all and (min-width: $screen-sm-min) {//768
+	.screen5{
+		.wrapper{
+			padding-top:5%;
+		}
+	}
+}
+@media all and (min-width:$screen-lg-min){
+	.screen5{
+		.trainers{
+			max-width:65%;
+		}
+	}
+}
+//animation
+.screen5{
+	.trainer-footer{
+		.order-btn{
+			transition:all .2s;
+		}
+		.order-btn:hover{
+			color:$color1;
+		}
+	}
+}

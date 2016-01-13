@@ -1,0 +1,74 @@
+.full{
+	min-height:100%;
+}
+.screen2,
+.screen3,
+.screen4,
+.screen5,
+.screen6,
+#main-footer{
+	overflow:hidden;
+	padding:0 $screen-padding;
+	text-align:center;
+}
+.bold-text{
+	font-family:$primary-font-bold;
+	font-size:$font-s;
+}
+h2{
+	font-family:$primary-font-bold;
+	font-size:$font-xl;
+	margin:25px auto;
+}
+#map{
+	height:100%;
+	width:100%;
+}
+@media all and (min-width: $screen-sm-min) {
+	h2{
+		font-size:$font-xxl;
+	}
+}
+.maps-info-window{
+	min-width:280px;
+	.photo{
+		border:1px solid #999;
+		//display:table-cell;
+		float:left;
+		height:100px;
+		overflow:hidden;
+		text-align:center;
+		vertical-align:middle;
+		width:100px;
+	}
+	.info{
+		float:right;
+		max-width:300px;
+		//display:table-cell;
+		.info-row{
+			//height:20px;
+			line-height:20px;
+			padding-left:15px;
+		}
+		.name{
+			font-weight:bold;
+		}
+	}
+}
+//infowindow on google maps for phones
+@media all and (max-width: $screen-xs-max){
+	#cboxContent{
+		margin-top:0 !important;
+	}
+}
+@media all and (max-width: $screen-xs-max) and (orientation:portrait){
+	.maps-info-window{
+		.info{
+			max-width:180px;
+		}	
+	}
+}
+#map .alert{
+	font-family:$primary-font-bold;
+	font-size:$font-l;
+}

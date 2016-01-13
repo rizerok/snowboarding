@@ -1,0 +1,34 @@
+{
+  "name": "0project",
+  "description": "0project",
+  "main": "index.html",
+  "authors": [
+    "alex"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "bashinsky.pro",
+  "dependencies": {
+    "jquery": "1.12.0",
+    "parallax.js": "~1.4.1",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
+    "jquery-colorbox": "~1.6.3"
+  },
+  "exportsOverride": {
+    "jquery": {
+      "/": "dist/jquery.min.js"
+    },
+    "bootstrap-sass": {
+      "/": "assets/"
+    },
+    "parallax.js": {
+      "/": "parallax.min.js"
+    },
+    "jquery-colorbox": {
+      "/": [
+        "example3/",
+        "jquery.colorbox-min.js"
+      ]
+    }
+  }
+}

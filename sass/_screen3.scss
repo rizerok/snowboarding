@@ -1,0 +1,161 @@
+.screen3{
+	color:$color10;
+	padding:0;
+	.plus{
+		padding:25px $screen-padding;
+	}
+	.minus{
+		//background:rgba(0,0,0,0.1);
+		padding:25px $screen-padding;
+	}
+	h2{
+		text-transform:uppercase;
+		font-size:$font-start-size !important;
+		margin-top:0;
+		margin-bottom:10px;
+		.heading{
+			font-size:$font-xxl;
+		}
+		&.plus-header .heading{
+			color:$color4;
+		}
+		&.minus-header .heading{
+			color:$color3;
+		}
+		.sub-heading{
+			font-size:$font-l;
+		}
+	}
+	.description{
+		font-family:$primary-font;
+		font-size:$font-m;
+	}
+	.sub-description{
+		font-family:$primary-font-bold;
+		font-size:$font-m;
+		padding:46px $screen-padding 0;
+		position:relative;
+		&:before{
+			background:$color4;
+			content:'';
+			height:6px;
+			position:absolute;
+			top:20px;
+			left:30%;
+			right:30%;
+			//width:50px;
+		}
+	}
+	.list{
+		list-style:none;
+		padding-left:30px;
+		li{
+			min-height:40px;
+			//overflow:hidden;
+			//line-height:40px;
+			margin-bottom:15px;
+			text-align:left;
+		}
+		.item-icon{
+			float:left;
+			border:3px solid $color10;
+			border-radius:20px;
+			font-size:20px;
+			line-height:40px;
+			height:40px;
+			width:40px;
+		}
+		.item-text{
+			font-family:$primary-font-bold;
+			font-size:$font-m;
+			//padding-top:2px;
+			padding-left:60px;
+			vertical-align:middle;
+		}
+	}
+	.more-btn{
+		border-color:$color3;
+		color:$color3;
+		position:relative;
+	}
+}
+@media all and (min-width: $screen-sm-min) {//768
+	.screen3{
+		position:relative;
+		&:before{
+			content:'';
+			background:rgba(0,0,0,.4);
+			position:absolute;
+			top:0;
+			bottom:0;
+			right:0;
+			width:50%;
+			z-index:0;
+		}
+		.plus, .minus{
+			padding-top:2%;
+		}
+		h2{
+			.heading{
+				font-size:$font-xxxl;
+			}
+		}
+		.list{
+			padding:0;
+		}
+		.plus{
+			text-align:right;
+			.list{
+				.item-icon{
+					float:right;
+				}
+				.item-text{
+					padding-left:0px;
+					padding-right:60px;
+					text-align:right;
+				}
+			}
+		}
+		.minus{
+			text-align:left;
+		}
+	}
+}
+//PORTRAIT TABLETS
+@media all and (orientation:portrait) and (min-width: $screen-sm-min) {//768
+	.screen3{
+		$vertical-indents:9%;
+		.wrapper{
+			margin-top:$vertical-indents+3%;
+		}
+		h2{
+			margin-bottom:$vertical-indents;
+		}
+		.description{
+			margin-bottom:$vertical-indents;
+		}
+		.list{
+			margin-bottom:$vertical-indents;
+			li{
+				margin-bottom:$vertical-indents;
+			}
+		}
+		.plus, .minus{
+			padding-bottom:0;
+		}
+		.sub-description{
+			padding-top:$vertical-indents;
+		}
+	}
+}
+//animaton
+.screen3{
+	.more-btn{
+		transition:all .2s;
+	}
+	.more-btn:hover{
+		color:$color2;
+		background:$color3;
+		border-color:$color2;
+	}
+}

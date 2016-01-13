@@ -1,0 +1,138 @@
+@import '_variables.scss';
+.icon, .screen4 .alert /*, .more-btn, .order-btn, .trainer-photo*/{
+	behavior: url(libs/ie-css3.htc);
+}
+.order-btn{
+	position:relative;
+	z-index:11;
+}
+.screen4 .alert:before{
+	display:none;
+	//background:none !important;
+	//color:$color4 !important;
+	border-radius:20px !important;
+	text-align:center;
+}
+h1,h2{
+	font-weight:bold !important;
+}
+.screen6{
+	padding-top:7% !important;
+	padding-bottom:0 !important;
+	#main-form .row .col-sm-6{
+		width:49.5% !important;
+	}
+	.main-form-input {
+		line-height:40px;
+	}
+	.textarea-block.col-sm-12{
+		width:100%;
+	}
+	.select {
+		display:block;
+		cursor:pointer;
+	    .select-view{
+	    	border: 2px solid #bbb;
+	    	.select-drop{
+	    		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
+	    		//background:rgba(0,0,0,.4);
+	    	}
+	    }
+	    ul{
+	    	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+	    	//background:rgba(0,0,0,.6);
+	    }
+	}
+}
+@mixin add-grids-ie($i: 1, $list: "") {
+  @for $i from 1 through 12 {
+    $list: "#{$list}.col-xs-#{$i}, .col-sm-#{$i}, .col-md-#{$i}, .col-lg-#{$i} ";
+  }
+  #{$list} {
+    display:inline-block;
+    vertical-align:top;
+  }
+}
+@include add-grids-ie();
+#main-header{
+	.row{
+		font:0;
+		.whatis.col-sm-4{
+			width:33% !important;
+		}
+	}
+	$vertical-indents:3%;
+	.main-title{
+		padding-top:$vertical-indents !important;
+		padding-bottom:$vertical-indents !important;
+		h1{
+			font-size:$font-xxxl;
+		}
+	}
+	.wrapper{
+		margin-top:5% !important;
+		.header{
+			padding-bottom:$vertical-indents !important;
+			h2{
+				font-size:$font-xxl !important;
+			}
+		}
+	}
+}
+.screen2{
+	.steps.col-sm-4{
+		width:33% !important;
+	}
+}
+.screen3{
+	position:relative !important;
+	&:before{
+		display:block;
+		content:'';
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);
+		//background:rgba(0,0,0,.4);
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		width:50%;
+		z-index:0;
+	}
+	.plus, .minus{
+		padding-top:2% !important;
+	}
+	h2{
+		.heading{
+			font-size:$font-xxxl !important;
+		}
+	}
+	.list{
+		padding:0px !important;
+	}
+	.plus{
+		text-align:right;
+		.list{
+			.item-icon{
+				float:right;
+			}
+			.item-text{
+				padding-left:0px !important;
+				padding-right:60px !important;
+				text-align:right;
+			}
+		}
+	}
+	.minus{
+		text-align:left;
+	}
+}
+.screen4{
+	.whatneed.col-sm-4{
+		width:33% !important;
+	}
+}
+.screen5{
+	.trainers .col-sm-4{
+		width:33% !important;
+	}
+}
