@@ -30,7 +30,7 @@
 				font-size:$font-xl;
 				font-family:$primary-font-bold;
 				color:$color1;
-				padding:20px 0;
+				padding:20px 30px;
 			}
 		}
 		.trainer-content{
@@ -73,15 +73,17 @@
 		}
 		.trainer-footer{
 			padding:0 30px;
+			text-align:center;
 			.order-btn{
 				background:$color4;
+				display:inline-block;
 				color:$color2;
 				font-family:$primary-font-bold;
 				font-size:$font-m;
 				margin:20px auto;
-			    width: 100%;
-			    max-width:260px;
-			    padding: 15px 10px;
+			    //width: 100%;
+			    max-width:100%;
+			    padding: 15px 20px;
 			    border-radius: 2px;
 			    cursor: pointer;
 			    text-transform:uppercase;

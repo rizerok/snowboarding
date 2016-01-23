@@ -2077,7 +2077,7 @@ h2 {
   font-size: 2.4em;
   font-family: "GothamProBold", Arial;
   color: #333;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 
 .screen5 .trainer-wrap .trainer-content {
@@ -2127,17 +2127,18 @@ h2 {
 
 .screen5 .trainer-wrap .trainer-footer {
   padding: 0 30px;
+  text-align: center;
 }
 
 .screen5 .trainer-wrap .trainer-footer .order-btn {
   background: #F0C311;
+  display: inline-block;
   color: #fff;
   font-family: "GothamProBold", Arial;
   font-size: 1.6em;
   margin: 20px auto;
-  width: 100%;
-  max-width: 260px;
-  padding: 15px 10px;
+  max-width: 100%;
+  padding: 15px 20px;
   border-radius: 2px;
   cursor: pointer;
   text-transform: uppercase;
